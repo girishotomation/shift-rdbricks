@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.106 s <<< FAILURE! - in TestSuite
+testOne(com.shift.tests.ShiftTest)  Time elapsed: 0.728 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'GIRISHPC', ip: '192.168.68.60'
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}]}]
+	at com.shift.tests.ShiftTest.testOne(ShiftTest.java:20)
+Caused by: java.lang.NoSuchMethodError: 'void com.google.common.base.Throwables.throwIfUnchecked(java.lang.Throwable)'
+	at com.shift.tests.ShiftTest.testOne(ShiftTest.java:20)
+
